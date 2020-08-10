@@ -1,16 +1,15 @@
 <%--
   Created by IntelliJ IDEA.
-  User: hola01
-  Date: 2020/8/9
-  Time: 21:28
-  To change this template use File | Settings | File Templates.
+  User: zzp
+  Date: 2020/8/10
+  Time: 15:22
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>TOMCAT</title>
+    <title>标题</title>
   </head>
   <body>
-  Hello tomcat
+  <h1>内容</h1>
   </body>
 </html>

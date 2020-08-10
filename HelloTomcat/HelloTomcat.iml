@@ -19,6 +19,5 @@
     </content>
     <orderEntry type="jdk" jdkName="14" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 10.0.0-M4" level="application_server_libraries" />
   </component>
 </module>
