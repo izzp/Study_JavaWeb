@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .container {
+            width: 40%;
+            margin: 20px auto;
+        }
+        
+        .common {
+            width: 230px;
+            height: 30px;
+        }
+        
+        span {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+        }
+        
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form class="container">
+        <!-- ********* Begin ********* -->
+        <div>
+            <span>用户名：</span>
+            <input type="text" class="common" />
+        </div>
+        <div>
+            <span>昵称：</span>
+            <input type="text" class="common" />
+        </div>
+        <div><span>性别：</span>
+            <input type="radio" id="male" class="common" name="sex" />
+            <label for="male">男</label>
+            <input type="radio " id="female" class="common" name="sex " />
+            <label for="female">女</label>
+            <input type="radio " id="other" class="common" name="sex" disabled="disabled" />
+            <label for="other">保密</label>
+        </div>
+        <div>
+            <span>婚姻状况：</span>
+            <input type="radio" id="single" class="common" name="state" checked="checked"/>
+            <label for="single">未婚</label>
+            <input type="radio" id="mirried" class="common" name="state" />
+            <label for="married">已婚</label>
+            <input type="radio " id="other" class="common" name="state"  />
+            <label for="secret">保密</label>
+        </div>
+    </form>
+</body>
+
+</html>
