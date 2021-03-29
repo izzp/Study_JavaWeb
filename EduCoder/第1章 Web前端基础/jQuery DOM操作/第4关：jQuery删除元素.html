@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <style>
+   button{
+    margin-top:20px;
+   }
+  </style>
+</head>
+<body>
+   <table class="tab" border="1" width="100%" cellspacing="0"  cellpadding="10" align="center">
+  <tr class="line">
+    <th>序号</th>
+    <th>姓名</th>
+    <th>性别</th>
+    <th>年龄</th>
+    <th class="final">住址</th>
+  </tr>
+  <tr class="line">
+    <td>1</td>
+    <td>张三</td>
+    <td>男</td>
+    <td>20</td>
+    <td class="final">北京</td>
+  </tr>
+  <tr class="line">
+    <td>2</td>
+    <td>李四</td>
+    <td>男</td>
+    <td>30</td>
+    <td class="final">洛杉矶</td>
+  </tr>
+  <tr class="line">
+    <td>3</td>
+    <td>丽丽</td>
+    <td>女</td>
+    <td>24</td>
+    <td class="final">上海</td> 
+  </tr>
+  <tr class="line">
+    <td>4</td>
+    <td>王五</td>
+    <td>男</td>
+    <td>26</td>
+    <td class="final">河南</td>
+  </tr>
+</table>
+<button class="btn1">删除最后一行</button>
+<button class="btn2">删除最后一个住址</button>
+    <script>
+    //-----------begin-----------
+        $(".btn1").click(function () {
+            $(".line").last().remove();
+        });
+        $(".btn2").click(function () {
+            $(".final").last().empty();
+        });
+    //------------end------------  
+    </script>
+    
+</body>
+</html>

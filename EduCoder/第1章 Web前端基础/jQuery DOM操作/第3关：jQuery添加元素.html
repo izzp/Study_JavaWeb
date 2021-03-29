@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <style>
+   button{
+    margin-top:20px;
+   }
+  </style>
+</head>
+<body>
+   <table class="tab" border="1" width="100%" cellspacing="0"  cellpadding="10" align="center">
+  <tr id="tb-head">
+    <th>序号</th>
+    <th>姓名</th>
+    <th>性别</th>
+    <th>年龄</th>
+    <th>住址</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>张三</td>
+    <td>男</td>
+    <td>20</td>
+    <td>北京</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>李四</td>
+    <td>男</td>
+    <td>30</td>
+    <td>洛杉矶</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>丽丽</td>
+    <td>女</td>
+    <td>24</td>
+    <td>上海</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>王五</td>
+    <td>男</td>
+    <td>26</td>
+    <td>河南</td>
+  </tr>
+</table>
+    <script>    
+    $(function(){
+      var count = 4;        
+      //---------表格下面添加【添加内容】按钮-------------
+	  //------------------- Begin ---------------
+        var addBtn = '<button class="btn">添加内容</button>';
+        $(".tab").after(addBtn);
+      //------------------- End -----------------
+       function loadData(){
+          for(var i =0; i<2; i++){
+            count ++;
+             var tr = '<tr>' +
+                  '<td>' + count + '</td>'+
+                  '<td>王五</td>'+
+                  '<td>男</td>'+
+                  '<td>26</td>'+
+                  '<td>河南</td>'+
+                '</tr>';
+
+         //---------表格底部添加内容------------
+		 //------------------- Begin ---------------
+         $(".tab").append(tr); 
+         //------------------- End -----------------
+
+          }
+       }
+        //-------------点击事件-----------------
+		//------------------- Begin ---------------
+		$(".btn").click(function(){loadData()});
+       //------------------- End -----------------
+    })
+    </script>
+
+</body>
+</html>

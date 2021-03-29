@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <ul class="container">
+    	<li class="item">
+    		<button>id</button>
+    		<div id="box"></div>
+    	</li>
+    	<li class="item">
+    		<button>类</button>
+    		<div class="box"></div>
+    	</li>
+    	<li class="item">
+    		<button>元素</button>
+    		<p></p>
+    	</li>
+    </ul>
+    <script>
+    
+    $(function(){
+    	
+    	$("button").click(function(){
+    		//inner是当前点击的button元素的内容
+    		var inner = $(this).html();
+    		if(inner == "id"){
+    			//----------begin----------
+    			var box = $("#box");
+                box.html("我是id选择器添加的内容");
+    			
+    			//----------end------------
+    		}
+    		if(inner == "类"){
+    			//----------begin----------
+    			var box2 = $(".box");
+                box2.html("我是类选择器添加的内容");
+    			
+    			//----------end------------
+    		}
+    		if(inner == "元素"){
+    			//----------begin----------
+    			var box3 = $("p");
+                box3.html("我是元素选择器添加的内容");
+    			
+    			//----------end------------
+    		}
+    	})
+    })
+
+    </script>  
+    <style>
+    	ul,li{
+    		list-style-type: none;
+    	}
+    	.container{
+    		width: 400px;
+    		margin: 40px auto;
+    	}
+    	.container .item{
+    		height: 60px;
+    		line-height: 60px;
+    		margin: 0 20px 20px 0;
+    		overflow: hidden;
+    	}
+    	.container .item button{
+    		float:left;
+    		width: 60px;
+    		line-height: 40px;
+    		text-align: center;
+    		font-size: 18px;
+    		margin-right: 20px;
+    	}
+    	.container .item div{
+    		width: 240px;
+    		height: 40px;
+    		line-height: 40px;
+    		border: 2px solid #ccc;
+    		text-align: center;
+    		float: left;
+    	}
+    	.container .item p{
+    		width: 240px;
+    		height: 40px;
+    		line-height: 40px;
+    		border: 2px solid #ccc;
+    		text-align: center;
+    		margin-top: 0px;
+    		float: left;
+    	}
+    </style>
+</body>
+</html>

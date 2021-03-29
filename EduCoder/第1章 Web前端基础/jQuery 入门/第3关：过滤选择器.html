@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+   <table border="1" cellspacing="0"  cellpadding="10" align="center">
+  <!--<caption>Monthly savings</caption>-->
+  <tr id="tb-head">
+    <th>姓名</th>
+    <th>性别</th>
+    <th>年龄</th>
+    <th>住址</th>
+  </tr>
+  <tr>
+    <td>张三</td>
+    <td>男</td>
+    <td>20</td>
+    <td>北京</td>
+  </tr>
+  <tr>
+     <td>李四</td>
+    <td>男</td>
+    <td>30</td>
+    <td>洛杉矶</td>
+  </tr>
+  <tr>
+     <td>丽丽</td>
+    <td>女</td>
+    <td>24</td>
+    <td>上海</td>
+  </tr>
+  <tr>
+     <td>王五</td>
+    <td>男</td>
+    <td>26</td>
+    <td>河南</td>
+  </tr>
+</table>
+    <script>
+    //-----------begin-----------
+    $("tr:even").css("background","lavenderblush");
+    $("tr:odd").css("background","lightyellow");	
+    $("tr:first").css("background","yellowgreen");
+    //------------end------------  
+    </script>
+    
+</body>
+</html>
