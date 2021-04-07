@@ -2,6 +2,7 @@ package com.mezzp.serlvet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Map;
 
 import javax.servlet.Servlet;
 import javax.servlet.ServletConfig;
@@ -56,13 +57,15 @@ public class SecondServlet implements Servlet {
 		String userName= req.getParameter("userName");
 		String userPwd=req.getParameter("userPwd");
 		System.out.println("--------------------");
-		System.out.println(userName+userPwd);
+		System.out.println("userName:"+userName+"userPwd:"+userPwd);
+		Map map = req.getParameterMap();
+		System.out.println(map);
 		System.out.println("--------------------");
 		//输出到浏览器
 		PrintWriter outPrintWriter=res.getWriter();
+		//输出成文件
 		//res.setContentType("application/msword");
 		outPrintWriter.println("<h1>hello<h1>");
-		System.out.println("--------------------");
 		//跳转
 //		HttpServletResponse response = (HttpServletResponse)res;
 //		response.sendRedirect("index.jsp");
