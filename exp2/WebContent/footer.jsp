@@ -7,9 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="jsp1.jsp" method="post">
-		x:<input type="text" id="x" name="x" /> <input type="submit"
-			value="提交" />
-	</form>
+	<p style="text-align: center; font-weight: bold;">版权所有:沧州师范学院
+		地址:沧州市青海路2009号 联系电话:0317-1234567</p>
 </body>
 </html>

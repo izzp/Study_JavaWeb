@@ -1,6 +1,6 @@
 <%@page import="javax.servlet.jsp.tagext.TryCatchFinally"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +8,8 @@
 <title>计算结果</title>
 </head>
 <body>
-<h1>计算结果：</h1>
-<%
+	<h1>计算结果：</h1>
+	<%
     String a = request.getParameter("a");
 	String op = request.getParameter("op");
     String b = request.getParameter("b");
@@ -33,8 +33,8 @@
     out.print(a+op+b+"="+o);
    	}
    	catch (Exception e){
-   		%><jsp:forward page="error.jsp"/>
-   	<%}
+   		%><jsp:forward page="error.jsp" />
+	<%}
 %>
 
 </body>
