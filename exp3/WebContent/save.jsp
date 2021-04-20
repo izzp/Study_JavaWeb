@@ -29,5 +29,6 @@
 		application.removeAttribute("users");
 		application.setAttribute("users", users);
 	%>
+	<jsp:forward page="list.jsp"/>
 </body>
 </html>
