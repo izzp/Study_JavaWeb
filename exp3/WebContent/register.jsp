@@ -17,7 +17,8 @@ div {
 </head>
 <body>
 	<h1>登录</h1>
-	<form action="save.jsp" method="post">
+<!-- 	<form action="save.jsp" method="post"> -->
+	<form action="RegisterServlet" method="post">
 		<div>
 			姓名:<input type="text" name="userName">
 		</div>
