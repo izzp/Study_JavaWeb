@@ -6,8 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>列表</title>
-   <link rel="stylesheet" href="https://www.orchome.com/css/bootstrap/3.0.3/bootstrap.min.css"/>
-   <script src="https://www.orchome.com/user/js/angular-1.5.8.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.4.1/css/bootstrap.min.css"/>
 </head>
 <body class="container">
 	<%
