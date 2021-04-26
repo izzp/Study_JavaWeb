@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 
-import catzc.zhaozhipeng.utils.C3P0Utils;
+import catzc.zhaozhipeng.exp4.utils.C3P0Utils;
 import caztc.zhaozhipeng.exp4.beans.User;
 
 public class UserDao {
